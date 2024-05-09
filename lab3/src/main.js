@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import Store from "../src/components/CompositionAPI/Store";
+import Store from "./Store";
+// import StorePosts from "../src/components/CompositionAPI/StorePosts";
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./components/Pages/Home.vue";
 import PostsPage from "./components/Pages/PostsPage.vue";
@@ -45,4 +46,8 @@ let router = createRouter({
 
 export default router;
 
+// to use Store
 createApp(App).use(router).use(Store).mount("#app");
+
+// to use StorePosts
+// createApp(App).use(router).use(StorePosts).mount("#app");
